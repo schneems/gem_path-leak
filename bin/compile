@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
 
-echo "-----> Nothing to do."
+if [ $GEM_PATH ]
+then
+  echo "GEM_PATH exists: $GEM_PATH"
+  exit 1
+fi
+
